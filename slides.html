@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FreelanScience</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        -moz-border-radius: 5px;
+        -web-border-radius: 5px;
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  <style type="text/css"></style></head>
+  <body class="remark-container">
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+# FreelanScience
+
+![](./img/scipyla.png)
+---
+## Agenda
+
+1. mi vida
+2. Mitos
+3. Pros & Contr(it)as 
+4. Trabajos
+5. Herramientas
+6. Consejos
+
+---
+template: inverse
+
+# mi vida
+(segunda mitad nomás...)
+---
+layout: false
+<!-- Mi vida -->
+<!-- 2001 -->
+.left-column[
+## mi vida
+  ### - 2001
+]
+.right-column[
+![](./img/decidircarrera.jpg)
+
+<!-- mate -> ideas -->
+
+<!-- comp -> ideas_small, plata -->
+]
+---
+<!-- 2006 -->
+.left-column[
+## mi vida
+  ### - 2001
+  ### - 2006
+]
+.right-column[
+![](./img/recibida.png)
+<!-- tesis -->
+<!-- recibida -->
+
+<!-- doct -->
+]
+---
+<!-- 2011 -->
+.left-column[
+## mi vida
+  ### - 2001
+  ### - 2006
+  ### - 2011
+]
+.right-column[
+![](./img/train.gif)
+<!-- colapso -->
+<!-- intentos fallidos en la industria -->
+<!-- freelanceo -->
+]
+---
+<!-- 2016? -->
+.left-column[
+## mi vida
+  ### - 2001
+  ### - 2006
+  ### - 2011
+  ### - 2016?
+]
+.right-column[
+![](./img/recibida.png)
+]
+<!-- Mitos   -->
+---
+template: inverse
+
+# Mitos
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+]
+.right-column[
+![](./img/django.png)
+![](./img/flask.png)
+![](./img/jquery.png)
+![](./img/html.png)
+![](./img/css.png)
+
+<!-- solo web -->
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+]
+.right-column[
+<!-- cosas científicas, loguitos -->
+![](./img/django_small.png)
+![](./img/flask_small.png)
+
+![](./img/jquery_small.png)
+![](./img/html_small.png)
+![](./img/css_small.png)
+
+![](./img/numpy.png)
+![](./img/scipy.png)
+![](./img/sklearn.png)
+![](./img/nltk.png)
+![](./img/matplotlib.png)
+![](./img/pandas.png)
+![](./img/pycrypto.png)
+![](./img/cvxopt.png)
+![](./img/statsmodels.png)
+![](./img/bokeh.png)
+![](./img/mahotas.png)
+![](./img/networkx.png)
+
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+]
+.right-column[
+![](./img/speak_big.png)
+<!-- Skype, hangouts -->
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+]
+.right-column[
+![](./img/hangout.png)
+![](./img/hipchat.png)
+![](./img/tasks.png)
+
+<!-- chat! grande, los otros chiquitos -->
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+]
+.right-column[
+![](./img/hangout.png)
+![](./img/hipchat.png)
+![](./img/tasks.png)
+![](./img/burns.png)
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+]
+.right-column[
+![](./img/workana.png)
+![](./img/ibero.png)
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+  ### - Solitario
+]
+.right-column[
+![](./img/yo.png)
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+  ### - Solitario
+]
+.right-column[
+![](./img/yo.png)
+![](./img/marcos.png)
+![](./img/martin.png)
+![](./img/ariel.png)
+![](./img/ale.png)
+![](./img/alezf.png)
+![](./img/mariano.png)
+![](./img/mariana.png)
+![](./img/martincito.png)
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+  ### - Solitario
+  ### - Grositud
+]
+.right-column[
+![](./img/toptal.png)
+]
+---
+.left-column[
+## Mitos
+  ### - Trabajo *estándar*
+  ### - Speak English
+  ### - Solitario
+  ### - Grositud
+]
+.right-column[
+![](./img/learningcurve.png)
+]
+<!-- Pros y Contr(it)as -->
+---
+template: inverse
+
+# Pros y Contr(it)as
+---
+.left-column[
+## Pros y Contr(it)as
+  ### - Flexibilidad
+]
+.right-column[
+- tipo de trabajo
+
+- carga horaria
+
+- extensión
+
+- nivel
+
+- precio
+
+]
+---
+.left-column[
+## Pros y Contr(it)as
+  ### - Flexibilidad
+  ### - Resolver ⇔ Aprender
+]
+.right-column[
+
+- en una empresa *normalmente* aprendemos según necesidades de proyectos
+
+- aquí podemos invertir la relación: buscar proyectos donde aprender lo que queremos
+
+]
+---
+.left-column[
+## Pros y Contr(it)as
+  ### - Flexibilidad
+  ### - Resolver ⇔ Aprender
+  ### - ¿Plata?
+]
+.right-column[
+- complicado, pero no imposible
+
+- ![](./img/payoneer.png)
+
+- ¿impuestos? Gris (jurisdicción, facturas, ¿ley del freelancer?)
+
+
+<!-- Payoneer -->
+<!-- impuestos -->
+
+]
+---
+.left-column[
+## Pros y Contr(it)as
+  ### - Flexibilidad
+  ### - Resolver ⇔ Aprender
+  ### - ¿Plata?
+  ### - ¿Estabilidad?
+]
+.right-column[
+- Al principio, no tanta.
+
+- Transición flexible
+
+- Mucho volumen de oferta
+
+- Buen pago cubre pausas
+]
+<!-- # Trabajos -->
+---
+template: inverse
+
+# Trabajos
+---
+<!-- OTA Expert -->
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+
+]
+.right-column[
+![](./img/otaexpert3.png)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+
+]
+.right-column[
+![](./img/otaexpert3.png)
+![](./img/scrapy.png)
+![](./img/django.png)
+![](./img/sklearn.png)
+![](./img/nltk.png)
+![](./img/statsmodels.png)
+![](./img/flot.png)
+]
+---
+<!-- Cogfor -->
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+
+]
+.right-column[
+![](./img/cogfor.png)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+
+]
+.right-column[
+![](./img/cogfor.png)
+
+![](./img/gensim.png)
+![](./img/flask.png)
+![](./img/manifoldcf.png)
+![](./img/nltk.png)
+![](./img/rabbitmq.png)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+]
+
+.right-column[
+![](./img/crypto.png)
+]
+
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+]
+
+.right-column[
+![](./img/crypto.png)
+
+![](./img/ipnb.png)
+]
+
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+]
+
+.right-column[
+![](./img/tweetmap.png)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+]
+
+.right-column[
+![](./img/tweetmap.png)
+
+![](./img/bokeh.png)
+![](./img/tweepy.png)
+]
+
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+  ### - Portfolio optimization
+. 
+]
+.right-column[
+![](./img/portfolio.jpg)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+  ### - Portfolio optimization
+. 
+]
+.right-column[
+![](./img/portfolio.jpg)
+
+![](./img/pandas.png)
+![](./img/cvxopt.png)
+
+![](./img/octave.png)
+![](./img/oc2py.png)
+
+]
+
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+  ### - Portfolio optimization
+  ### - Hierarchichal Clustering
+
+]
+.right-column[
+![](./img/ihac.png)
+]
+---
+.left-column[
+  ## Trabajos
+  ### - OTA Expert
+  ### - Cogfor
+  ### - Crypto
+  ### - Tweetmaps
+  ### - Portfolio optimization
+  ### - Hierarchichal Clustering
+
+]
+.right-column[
+![](./img/ihac.png)
+
+![](./img/sklearn.png)
+![](./img/nltk.png)
+![](./img/matplotlib.png)
+![](./img/scipy.png)
+![](./img/networkx.png)
+![](./img/ipnb.png)
+
+]
+
+<!-- # Herramientas -->
+---
+template: inverse
+
+# Herramientas
+---
+
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+
+]
+.right-column[
+![](./img/asana.png)
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+
+]
+.right-column[
+![](./img/github.png)
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+]
+.right-column[
+![](./img/ipnb_big.png)
+
+![](./img/ipnb_ejemplo.png)
+
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+  ### - Encontrar <!-- UpWork / Workana / TopTal / Freelancer -->
+]
+.right-column[
+![](./img/upwork.png)
+
+![](./img/workana.png)
+
+![](./img/toptal_logo.png)
+
+![](./img/freelancer.png)
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+  ### - Encontrar <!-- UpWork / Workana / TopTal / Freelancer -->
+  ### - Aprender  <!-- StackOverflow / Blogs / Quora / Docs / mailinglists / Coursera/Udacity -->
+]
+.right-column[
+![](./img/stackoverflow.png)
+![](./img/blog.png)
+![](./img/quora.png)
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+  ### - Encontrar <!-- UpWork / Workana / TopTal / Freelancer -->
+  ### - Aprender  <!-- StackOverflow / Blogs / Quora / Docs / mailinglists / Coursera/Udacity -->
+]
+.right-column[
+
+![](./img/coursera.png)
+![](./img/coursera_courses.png)
+![](./img/udacity.png)
+]
+
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+  ### - Encontrar <!-- UpWork / Workana / TopTal / Freelancer -->
+  ### - Aprender  <!-- StackOverflow / Blogs / Quora / Docs / mailinglists / Coursera/Udacity -->
+  ### - Competir & Cooperar <!-- Hackerrank / Kaggle /  -->
+
+]
+.right-column[
+![](./img/hackerrank.png)
+![](./img/kaggle.png)
+]
+---
+.left-column[
+  ## Herramientas
+  ### - Ordenarse <!-- Asana -->
+  ### - Colaborar <!-- Git -->
+  ### - Comunicar <!-- iPython notebook -->
+  ### - Encontrar <!-- UpWork / Workana / TopTal / Freelancer -->
+  ### - Aprender  <!-- StackOverflow / Blogs / Quora / Docs / mailinglists / Coursera/Udacity -->
+  ### - Competir & Cooperar <!-- Hackerrank / Kaggle /  -->
+
+]
+.right-column[
+![](./img/hackaton.png)
+]
+
+<!-- # Consejos -->
+---
+template: inverse
+
+# Consejos
+---
+.left-column[
+  ## Consejos
+  ### - buenas prácticas
+]
+.right-column[
+- comunicación
+
+- Git
+
+- manejo de tareas
+
+- pero no fanatizarse!
+
+]
+---
+.left-column[
+  ## Consejos
+  ### - buenas prácticas
+  ### - hacerse de abajo
+]
+.right-column[
+- no cobrar por título
+
+- no cobrar por potencial
+
+- ni aunque te lo ofrezcan :)
+
+- ir demostrando
+
+- comenzar por precio fijo
+
+]
+---
+.left-column[
+  ## Consejos
+  ### - buenas prácticas
+  ### - hacerse de abajo
+  ### - buenos clientes
+]
+.right-column[
+
+- comunicativos pero no densos
+
+- preferentemente también ñoños
+
+
+
+]
+---
+.left-column[
+  ## Consejos
+  ### - buenas prácticas
+  ### - hacerse de abajo
+  ### - buenos clientes
+  ### - ser feliz
+]
+.right-column[
+- ¡5 trabajos es mucho!
+]
+---
+<!-- template: inverse -->
+<!-- # ¿Preguntas? -->
+# ¿Preguntas?
+
+![](./img/twitter.png)
+https://twitter.com/PCelayes
+
+![](./img/github.jpg)
+https://github.com/pablocelayes
+
+![](./img/upwork.jpg)
+https://www.odesk.com/users/~01fe4d5568ee0b5024
+
+![](./img/linkedin.png)
+https://www.linkedin.com/in/pablogabrielcelayes
+
+    </textarea>
+    <script type="text/javascript" src="./remark-latest.min.js">
+    </script>
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
